@@ -38,7 +38,7 @@ const TextLinkBlock = ({item}) => {
     if(item.text_link_of_space === "text"){
         element = <StyledText sizing={item.font_grootte} regel={item.style} text={`${item.context.text} `} />
     }else if(item.text_link_of_space === "link"){
-        element = <Linkage target="_blank" regel={item.style} href={`${item.type_link ? item.type_link : ""}${item.context.text}`}>{item.context.text}</Linkage>
+        element = <Linkage target="_blank" regel={item.style} href={`${item.type_link == "www." ? "" : item.type_link}${item.context.text}`}>{item.context.text}</Linkage>
     }else{
         element = <Spacer/>
     }
