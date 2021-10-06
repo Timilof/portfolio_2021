@@ -59,8 +59,12 @@ const IndexPage = ({ data }) => {
   const welcome = data.prismicWelcome.data
   const workdata = data.allPrismicWork.nodes
   
-  console.log(workdata)
   
+  
+    workdata.sort(function(a, b) {
+      return b.data.order - a.data.order;
+    })
+
     const works = workdata.map((item, i)=>
           <Work item={item.data} key={i}/>
     );
@@ -104,6 +108,7 @@ export const HOMEPAGE_QUERY = graphql`
         }
         
       }
+      order
       live_link{
         text
       }

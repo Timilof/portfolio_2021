@@ -1,91 +1,112 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "uid"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "uid"
       }
     },
-    "title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1",
-        "label" : "title"
+    "order": {
+      "type": "Number",
+      "config": {
+        "label": "order"
       }
     },
-    "date" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph",
-        "label" : "date"
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "title"
       }
     },
-    "live_link" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph",
-        "label" : "live_link"
+    "date": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "date"
       }
     },
-    "repo_link" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph",
-        "label" : "repo_link"
+    "live_link": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "live_link"
       }
     },
-    "cover" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "cover"
+    "repo_link": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "repo_link"
       }
     },
-    "brood_text" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "style" : {
-            "type" : "Select",
-            "config" : {
-              "options" : [ "nieuwe regel", "in zelfde regel" ],
-              "label" : "style"
+    "cover": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "cover"
+      }
+    },
+    "brood_text": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "style": {
+            "type": "Select",
+            "config": {
+              "options": [
+                "nieuwe regel",
+                "in zelfde regel"
+              ],
+              "label": "style"
             }
           },
-          "text_link_of_space" : {
-            "type" : "Select",
-            "config" : {
-              "options" : [ "text", "link", "space" ],
-              "default_value" : "text",
-              "label" : "text link of space"
+          "text_link_of_space": {
+            "type": "Select",
+            "config": {
+              "options": [
+                "text",
+                "link",
+                "space"
+              ],
+              "default_value": "text",
+              "label": "text link of space"
             }
           },
-          "context" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph",
-              "label" : "context",
-              "placeholder" : "hier alle content"
+          "context": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph",
+              "label": "context",
+              "placeholder": "hier alle content"
             }
           },
-          "type_link" : {
-            "type" : "Select",
-            "config" : {
-              "options" : [ "mailto:", "tel:", "/", "www." ],
-              "label" : "type_link"
+          "type_link": {
+            "type": "Select",
+            "config": {
+              "options": [
+                "mailto:",
+                "tel:",
+                "/",
+                "www."
+              ],
+              "label": "type_link"
             }
           },
-          "font_grootte" : {
-            "type" : "Select",
-            "config" : {
-              "options" : [ "small", "big" ],
-              "default_value" : "small",
-              "label" : "font_grootte"
+          "font_grootte": {
+            "type": "Select",
+            "config": {
+              "options": [
+                "small",
+                "big"
+              ],
+              "default_value": "small",
+              "label": "font_grootte"
             }
           }
         },
-        "label" : "brood_text"
+        "label": "brood_text"
       }
     }
   }
